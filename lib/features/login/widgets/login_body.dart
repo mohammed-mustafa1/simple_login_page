@@ -81,15 +81,32 @@ class _LoginBodyState extends State<LoginBody> {
             ),
           ),
           SizedBox(height: 16),
-          ElevatedButton(
-            onPressed: () {
-              if (formKey.currentState!.validate()) {
-                formKey.currentState!.save();
-                log('Email: $email, Password: $password');
-                // Navigator.pushNamed(context, '/home');
-              }
-            },
-            child: Text('Login'),
+          SizedBox(
+            width: double.infinity,
+            height: 58,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color(0xff2BC990),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
+              onPressed: () {
+                if (formKey.currentState!.validate()) {
+                  formKey.currentState!.save();
+                  log('Email: $email, Password: $password');
+                  // Navigator.pushNamed(context, '/home');
+                }
+              },
+              child: Text(
+                'Login',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white,
+                ),
+              ),
+            ),
           ),
         ],
       ),
