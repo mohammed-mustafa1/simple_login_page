@@ -1,16 +1,19 @@
-# login_page
+# 🚀 Simple Login UI
 
-A new Flutter project.
+A clean and modern login screen built using Flutter
 
-## Getting Started
+## 📱 Screenshot
 
-This project is a starting point for a Flutter application.
+![Login Screen](assets/Screenshot.png)
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Sleek and user-friendly login design
+- Email and password input fields
+- Stylish login button
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+- Flutter 3.x
+- Dart
+- Custom UI with `Column`, `TextField`, and `ElevatedButton` or `MaterialButton`
